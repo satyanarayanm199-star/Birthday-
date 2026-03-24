@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Somyashree (Lisi)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #d63384;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px;
+        }
+        .surprise {
+            margin-top: 40px;
+            font-size: 1.5em;
+            color: #ff4081;
+        }
+        .secret-link {
+            margin-top: 50px;
+            display: none;
+            font-weight: bold;
+            color: #333;
+        }
+        .reveal {
+            margin-top: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday, Somyashree (Lisi)!</h1>
+    <p>My love, you mean the world to me. I am so grateful to have you in my life.</p>
+    <p class="surprise">Here’s a special surprise just for you!</p>
+    <div class="reveal" onclick="document.querySelector('.secret-link').style.display='block'; this.style.display='none';">
+        Click here for a secret message!
+    </div>
+    <div class="secret-link">
+        You are my everything, and I can't wait for all the adventures we will share together. I love you endlessly!
+    </div>
+</body>
+</html>
