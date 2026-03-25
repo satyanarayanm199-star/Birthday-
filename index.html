@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Somyashree</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        text-align: center;
+        color: #fff;
+        overflow: hidden;
+    }h1 {
+    margin-top: 80px;
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+p {
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 20px auto;
+    animation: fadeIn 4s ease-in-out;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff3b2e;
+    transform: scale(1.1);
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.balloons {
+    position: absolute;
+    bottom: -150px;
+    width: 100%;
+}
+
+.balloon {
+    width: 40px;
+    height: 60px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: float 6s infinite ease-in;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-120vh); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+</style>
+</head>
+<body><h1>🎉 Happy Birthday 🎉</h1>
+<h2>Somyashree (Lisi) ❤️</h2><p>
+    On this beautiful day, I just want to tell you how special you are to me. 
+    You bring happiness, love, and light into my life every single day. 💖
+</p><button onclick="showMessage()">Click for Surprise 🎁</button>
+
+<div class="hidden-message" id="message">
+    💕 I love you so much Somyashree (Lisi)! 💕<br>
+    May your day be filled with joy, laughter, and endless love! 🎂🎈
+</div><div class="balloons" id="balloons"></div><script>
+function showMessage() {
+    document.getElementById('message').style.display = 'block';
+}
+
+// Create floating balloons dynamically
+function createBalloons() {
+    const container = document
